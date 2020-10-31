@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actchange"
+        android:orderInCategory="100"
+        android:title="編輯活動"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actdelete"
+        android:orderInCategory="100"
+        android:title="刪除活動"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actshare"
+        android:orderInCategory="100"
+        android:title="我要分享"
+        app:showAsAction="never" />
+
+</menu>

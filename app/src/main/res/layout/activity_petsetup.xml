@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Petsetup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c1c1c1" />
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="愛稱："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nameID"
+                    android:layout_width="273dp"
+                    android:layout_height="75dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/setname"
+                    android:layout_width="273dp"
+                    android:layout_height="75dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/name"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:drawableRight="@drawable/bianji"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/nameok"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:drawableStart="@android:drawable/checkbox_on_background"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="性別："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/gen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/bianji"
+                android:paddingLeft="40dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:text=""
+                android:textSize="20dp" />
+        </LinearLayout>>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="生日："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/bir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/bianji"
+                android:paddingLeft="40dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:text=""
+                android:textSize="20dp" />
+        </LinearLayout>>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="品種："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/introduction"
+                    android:layout_width="273dp"
+                    android:layout_height="75dp"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+                <EditText
+                    android:id="@+id/setintroduction"
+                    android:layout_width="273dp"
+                    android:layout_height="75dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20dp"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/in"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:drawableRight="@drawable/bianji"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/inok"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:drawableStart="@android:drawable/checkbox_on_background"
+                    android:paddingLeft="40dp"
+                    android:text=""
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="寵物\n頭貼："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="325dp"
+                android:layout_height="173dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffff"
+                android:drawableRight="@drawable/bianji"
+                android:paddingLeft="40dp"
+                android:text=""
+                style="?android:attr/borderlessButtonStyle"
+                android:textSize="20dp" />
+        </LinearLayout>>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+
+    </LinearLayout>>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

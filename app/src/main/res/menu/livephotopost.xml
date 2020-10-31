@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/photoedit"
+            android:orderInCategory="100"
+            android:title="編輯生活照"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/photodelete"
+            android:orderInCategory="100"
+            android:title="刪除生活照"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/photoshare"
+            android:orderInCategory="100"
+            android:title="我要分享"
+            app:showAsAction="never" />
+    </menu>

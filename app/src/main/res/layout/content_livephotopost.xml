@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/ImageVie"
+                android:layout_width="74dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/defualt_personal"
+                app:layout_constraintStart_toStartOf="@id/lin" />
+
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:focusable="false"
+                android:text="user"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="right"
+                android:text="2012/12/12"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#d3d3d3"
+            android:elevation="6dp"
+            app:layout_constraintTop_toBottomOf="@id/lin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="412dp"
+                android:layout_height="375dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="173dp" />
+
+                    <EditText
+                        android:id="@+id/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="50dp"
+                        tools:layout_editor_absoluteY="173dp" />
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="422dp"
+                        android:layout_height="327dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp" />
+
+                    <LinearLayout
+                        android:id="@+id/clayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/houcan"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton13" />
+    <EditText
+        android:id="@+id/write"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="245dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ffffff"
+        android:hint="留言"
+        android:textColorHint="#76D2F1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <ImageButton
+        android:id="@+id/send"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:background="#FFFFFF"
+        android:tint="#76D2F1"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintStart_toEndOf="@+id/write"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ImageButton
+
+        android:id="@+id/imageButton13"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#ffffff"
+        android:scaleType="centerInside"
+
+        android:src="@drawable/aixin"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/send"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

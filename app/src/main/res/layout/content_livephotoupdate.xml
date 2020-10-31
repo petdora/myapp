@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imag01"
+                android:layout_width="74dp"
+                android:layout_height="79dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/defualt_personal"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="@id/lin" />
+            <EditText
+                android:id="@+id/sender40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user"
+                android:background="@null"
+                android:focusable="false"
+                android:layout_marginLeft="10dp"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="right"
+                android:text="2012/12/12"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+        <View
+            app:layout_constraintTop_toBottomOf="@id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:background="#d3d3d3"
+            android:elevation="6dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="412dp"
+                android:layout_height="375dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:saveEnabled="false"
+                        android:textSize="30sp"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="173dp" />
+
+                    <EditText
+                        android:id="@+id/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:saveEnabled="false"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="50dp"
+                        tools:layout_editor_absoluteY="173dp" />
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_width="422dp"
+                        android:layout_height="327dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="28dp"
+                        />
+                    <ImageButton
+                        android:id="@+id/upload"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#00FFFFFF"
+                        android:tint="@android:color/black"
+                        app:srcCompat="@android:drawable/ic_menu_gallery" />
+                </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/editrelease"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="208dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttontype"
+                    android:text="發布"
+                    android:textColor="#76D2F1"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

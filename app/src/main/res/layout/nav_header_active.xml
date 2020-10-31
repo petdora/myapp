@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76D2F1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#76D2F1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/iv_personal_icon"
+                android:layout_width="218dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:src="@drawable/defualt_personal" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:paddingBottom="8dp"
+                android:text="多多"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5px"
+                        android:background="#ffffff"
+                        android:elevation="4dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnphoto"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_gravity="start"
+                        android:background="#76D2F1"
+                        android:drawableLeft="@drawable/huodong"
+                        android:drawablePadding="30dp"
+                        android:text="生活照"
+                        android:textAlignment="viewStart"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:text="寵物活動"
+                        android:drawablePadding="30dp"
+                        android:drawableLeft="@drawable/huodong"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+                        android:id="@+id/btn_activity"
+                        android:background="#76D2F1"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="好友聊天"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:drawableLeft="@drawable/haoyou"
+                        android:drawablePadding="30dp"
+                        android:textColor="#ffffff"
+                        android:textAlignment="viewStart"
+                        android:layout_gravity="start"
+                        android:textSize="20dp"
+                        android:id="@+id/btn_friend"
+                        android:background="#76D2F1" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="寵物翻譯"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:textColor="#ffffff"
+                        android:drawableLeft="@drawable/fanyi"
+                        android:drawablePadding="30dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:textSize="20dp"
+                        android:id="@+id/btn_tran"
+                        android:background="#76D2F1" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:text="個人設置"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:textColor="#ffffff"
+                        android:drawableLeft="@drawable/geren"
+                        android:drawablePadding="30dp"
+                        android:textAlignment="textStart"
+                        android:layout_gravity="start"
+                        android:textSize="20dp"
+                        android:id="@+id/btn_setup"
+                        android:background="#76D2F1" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffffff" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

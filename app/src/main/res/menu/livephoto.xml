@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_notifications"
+        android:title="notifications"
+        android:icon="@drawable/tixing"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/photorelease"
+        android:orderInCategory="100"
+        android:title="發布生活照"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myphoto"
+        android:orderInCategory="100"
+        android:title="我的生活照"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mypreasure"
+        android:orderInCategory="100"
+        android:title="我的收藏"
+        app:showAsAction="never" />
+</menu>

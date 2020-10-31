@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_personal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/kuozhan"
+            android:paddingLeft="20dp"
+            android:text="個人資料"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_pet"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/kuozhan"
+            android:paddingLeft="20dp"
+            android:text="我的寵物"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/kuozhan"
+            android:paddingLeft="20dp"
+            android:text="密碼管理"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_notify"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/kuozhan"
+            android:paddingLeft="20dp"
+            android:text="通知設定"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/btn_other"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="start"
+            android:background="#ffffff"
+            android:baselineAligned="false"
+            android:drawableRight="@drawable/kuozhan"
+            android:paddingLeft="20dp"
+            android:text="其他反饋"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+    </LinearLayout>>
+
+
+</FrameLayout>
